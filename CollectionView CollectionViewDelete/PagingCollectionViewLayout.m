@@ -130,9 +130,6 @@ typedef int (^pageCaculateBlock)(int itemNumber);
 
 - (CGSize)collectionViewContentSize
 {
-    
-    
-    
     return CGSizeMake(self.collectionView.bounds.size.width*pageNumber, self.collectionView.bounds.size.height);
 }
 

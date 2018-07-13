@@ -18,7 +18,7 @@
 		CF09A9DB20F7289D007879BC /* PagingCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = CF09A9DA20F7289D007879BC /* PagingCollectionViewLayout.m */; };
 		CF09A9DE20F72AF6007879BC /* UIView+SetRect.m in Sources */ = {isa = PBXBuildFile; fileRef = CF09A9DC20F72AF5007879BC /* UIView+SetRect.m */; };
 		CF09A9E120F7302A007879BC /* DragCellCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF09A9E020F7302A007879BC /* DragCellCollectionView.m */; };
-		CF09A9E420F73190007879BC /* SubCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF09A9E320F73190007879BC /* SubCollectionViewCell.m */; };
+		CF09A9E720F74116007879BC /* SubCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF09A9E620F74116007879BC /* SubCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +61,8 @@
 		CF09A9DD20F72AF5007879BC /* UIView+SetRect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SetRect.h"; sourceTree = "<group>"; };
 		CF09A9DF20F7302A007879BC /* DragCellCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragCellCollectionView.h; sourceTree = "<group>"; };
 		CF09A9E020F7302A007879BC /* DragCellCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragCellCollectionView.m; sourceTree = "<group>"; };
-		CF09A9E220F73190007879BC /* SubCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubCollectionViewCell.h; sourceTree = "<group>"; };
-		CF09A9E320F73190007879BC /* SubCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubCollectionViewCell.m; sourceTree = "<group>"; };
+		CF09A9E520F74116007879BC /* SubCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubCollectionViewCell.h; sourceTree = "<group>"; };
+		CF09A9E620F74116007879BC /* SubCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +121,8 @@
 				CF09A9DA20F7289D007879BC /* PagingCollectionViewLayout.m */,
 				CF09A9DF20F7302A007879BC /* DragCellCollectionView.h */,
 				CF09A9E020F7302A007879BC /* DragCellCollectionView.m */,
-				CF09A9E220F73190007879BC /* SubCollectionViewCell.h */,
-				CF09A9E320F73190007879BC /* SubCollectionViewCell.m */,
+				CF09A9E520F74116007879BC /* SubCollectionViewCell.h */,
+				CF09A9E620F74116007879BC /* SubCollectionViewCell.m */,
 				CF09A9DD20F72AF5007879BC /* UIView+SetRect.h */,
 				CF09A9DC20F72AF5007879BC /* UIView+SetRect.m */,
 				CF09A9AD20F71FA5007879BC /* Main.storyboard */,
@@ -284,10 +284,10 @@
 			files = (
 				CF09A9AC20F71FA5007879BC /* ViewController.m in Sources */,
 				CF09A9B720F71FA8007879BC /* main.m in Sources */,
-				CF09A9E420F73190007879BC /* SubCollectionViewCell.m in Sources */,
 				CF09A9E120F7302A007879BC /* DragCellCollectionView.m in Sources */,
 				CF09A9DB20F7289D007879BC /* PagingCollectionViewLayout.m in Sources */,
 				CF09A9DE20F72AF6007879BC /* UIView+SetRect.m in Sources */,
+				CF09A9E720F74116007879BC /* SubCollectionViewCell.m in Sources */,
 				CF09A9A920F71FA5007879BC /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
