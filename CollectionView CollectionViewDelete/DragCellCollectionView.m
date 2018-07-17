@@ -394,7 +394,7 @@ static NSString * const reuseIdentifier = @"Cell";
 
 #pragma mark - public methods
 
-- (void)_enterEditingModel{
+- (void)enterEditingModel{
     _editing = YES;
     _oldMinimumPressDuration =  _longPressGesture.minimumPressDuration;
     _longPressGesture.minimumPressDuration = 0.4;
@@ -408,7 +408,7 @@ static NSString * const reuseIdentifier = @"Cell";
     }
 }
 
-- (void)_stopEditingModel{
+- (void)stopEditingModel{
     _editing = NO;
     _longPressGesture.minimumPressDuration = _oldMinimumPressDuration;
     [self p_stopShakeAllCell];

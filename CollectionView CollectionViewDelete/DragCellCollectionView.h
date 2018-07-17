@@ -71,9 +71,9 @@
 @property (nonatomic, assign, readonly, getter=isEditing) BOOL editing;
 
 /**进入编辑模式，如果开启抖动会自动持续抖动，且不用长按就能出发拖动*/
-- (void)_enterEditingModel;
+- (void)enterEditingModel;
 
 /**退出编辑模式*/
-- (void)_stopEditingModel;
+- (void)stopEditingModel;
 
 @end

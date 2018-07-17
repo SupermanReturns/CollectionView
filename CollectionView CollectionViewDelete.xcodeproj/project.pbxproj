@@ -19,6 +19,7 @@
 		CF09A9DE20F72AF6007879BC /* UIView+SetRect.m in Sources */ = {isa = PBXBuildFile; fileRef = CF09A9DC20F72AF5007879BC /* UIView+SetRect.m */; };
 		CF09A9E120F7302A007879BC /* DragCellCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF09A9E020F7302A007879BC /* DragCellCollectionView.m */; };
 		CF09A9E720F74116007879BC /* SubCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF09A9E620F74116007879BC /* SubCollectionViewCell.m */; };
+		CF7455D220FC9FEA003984F2 /* delete.png in Resources */ = {isa = PBXBuildFile; fileRef = CF7455D120FC9FE9003984F2 /* delete.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		CF09A9E020F7302A007879BC /* DragCellCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragCellCollectionView.m; sourceTree = "<group>"; };
 		CF09A9E520F74116007879BC /* SubCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubCollectionViewCell.h; sourceTree = "<group>"; };
 		CF09A9E620F74116007879BC /* SubCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubCollectionViewCell.m; sourceTree = "<group>"; };
+		CF7455D120FC9FE9003984F2 /* delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = delete.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 		CF09A9A620F71FA5007879BC /* CollectionView CollectionViewDelete */ = {
 			isa = PBXGroup;
 			children = (
+				CF7455D120FC9FE9003984F2 /* delete.png */,
 				CF09A9A720F71FA5007879BC /* AppDelegate.h */,
 				CF09A9A820F71FA5007879BC /* AppDelegate.m */,
 				CF09A9AA20F71FA5007879BC /* ViewController.h */,
@@ -255,6 +258,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF7455D220FC9FEA003984F2 /* delete.png in Resources */,
 				CF09A9B420F71FA8007879BC /* LaunchScreen.storyboard in Resources */,
 				CF09A9B120F71FA8007879BC /* Assets.xcassets in Resources */,
 				CF09A9AF20F71FA5007879BC /* Main.storyboard in Resources */,
@@ -460,13 +464,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 78S8WECG83;
 				INFOPLIST_FILE = "CollectionView CollectionViewDelete/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ffd.CollectionView-CollectionViewDelete";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -477,13 +482,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 78S8WECG83;
 				INFOPLIST_FILE = "CollectionView CollectionViewDelete/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ffd.CollectionView-CollectionViewDelete";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

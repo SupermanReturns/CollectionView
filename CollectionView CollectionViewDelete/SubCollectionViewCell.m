@@ -23,9 +23,7 @@ static NSString *animationKey = @"PagingShakeAnimation";
     self = [super initWithFrame:frame];
     
     if (self) {
-//        @property (strong, nonatomic) UILabel  *titleLabel;
-//        @property(strong,nonatomic) UIButton *headerButton;
-//        @property(strong,nonatomic)UIButton *deleteButton;
+
         UILabel  *titleLabel=[[UILabel alloc]init];
         [self.contentView addSubview:titleLabel];
         _titleLabel=titleLabel;
@@ -35,16 +33,22 @@ static NSString *animationKey = @"PagingShakeAnimation";
         _headerButton=headerButton;
         
         UIButton *deleteButton=[[UIButton alloc]init];
+        [deleteButton setBackgroundImage:[UIImage imageNamed:@"delete.png"] forState:UIControlStateNormal];
         [deleteButton addTarget:self action:@selector(clickDeleteButton) forControlEvents:UIControlEventTouchUpInside];
-        [self.contentView addSubview:deleteButton];
+        [_headerButton addSubview:deleteButton];
+
         _deleteButton=deleteButton;
+        
         [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(handleShake:) name:editStateChanged object:nil];
 
     }
     return self;
 }
--(void)layoutUI{
-    
+
+-(void)layoutSubviews{
+    _headerButton.frame=CGRectMake(5, 5, 60, 60);
+    _titleLabel.frame=CGRectMake(0, 67, 70, 18);
+    _deleteButton.frame=CGRectMake(0, 0,20, 20);
 }
 -(void)clickDeleteButton{
     [[NSNotificationCenter defaultCenter] postNotificationName:deleteCell object:self];
