@@ -67,7 +67,7 @@
 @property (nonatomic, assign) BOOL shakeWhenMoveing;
 /**抖动的等级(1.0f~10.0f)，默认4*/
 @property (nonatomic, assign) CGFloat shakeLevel;
-/**是否正在编辑模式，调用p_enterEditingModel和_stopEditingModel会修改该方法的值*/
+/**是否正在编辑模式，调用enterEditingModel和stopEditingModel会修改该方法的值*/
 @property (nonatomic, assign, readonly, getter=isEditing) BOOL editing;
 
 /**进入编辑模式，如果开启抖动会自动持续抖动，且不用长按就能出发拖动*/

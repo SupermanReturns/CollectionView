@@ -30,13 +30,6 @@
     // Do any additional setup after loading the view, typically from a nib.
     PagingCollectionViewLayout *layout = [[PagingCollectionViewLayout alloc]init];
     
-    UICollectionViewFlowLayout *flowLayout = [[UICollectionViewFlowLayout alloc]init];
-    flowLayout.itemSize = CGSizeMake(70, 85);
-    flowLayout.sectionInset = UIEdgeInsetsMake(5, 10, 5, 10);
-    flowLayout.minimumLineSpacing = 10;
-    flowLayout.minimumInteritemSpacing = 2;
-    
-    
     NSArray *datas = @[@"alipay_r",@"bitcoin_r",@"dianpin_r",@"douban_r",@"dribbble_r",@"dropbox_r",@"email_r",@"evernote_r",@"facebook_r",@"google-plus_r",@"instagram_r",@"instapaper_r",@"line_r",@"linkedin_r",@"path_r",@"snapchat_r",@"path_r",@"snapchat_r",@"pinterest_r",@"pocket_r",@"qq_r",@"quora_r",@"qzone_r",@"readability_r",@"reddit_r",@"path_r",@"snapchat_r",@"pinterest_r",@"pocket_r",@"qq_r",@"quora_r",@"qzone_r",@"readability_r",@"reddit_r"];
     NSArray *dataTwo = @[@"path_r",@"snapchat_r",@"pinterest_r",@"pocket_r",@"qq_r",@"quora_r",@"qzone_r",@"readability_r",@"reddit_r"];
     
@@ -105,7 +98,6 @@
 
     SubCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reusableCell   forIndexPath:indexPath];
 
-    
     NSString *name;
     NSArray *array =  self.dataAll[indexPath.section];
     

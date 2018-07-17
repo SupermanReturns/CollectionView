@@ -129,7 +129,7 @@ static NSString * const reuseIdentifier = @"Cell";
     [self addSubview:_tempMoveCell];
     
     //    //开启边缘滚动定时器
-    [self p_setEdgeTimer];
+    [self setEdgeTimer];
     //开启抖动
     if (_shakeWhenMoveing && !_editing) {
         [self p_shakeAllCell];
@@ -163,7 +163,7 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)p_gestureEndOrCancle:(UILongPressGestureRecognizer *)longPressGesture{
     UICollectionViewCell *cell = [self cellForItemAtIndexPath:_originalIndexPath];
     self.userInteractionEnabled = NO;
-    [self p_stopEdgeTimer];
+    [self stopEdgeTimer];
     //通知代理
     if ([self.delegate respondsToSelector:@selector(dragCellCollectionViewCellEndMoving:)]) {
         [self.delegate dragCellCollectionViewCellEndMoving:self];
@@ -194,14 +194,14 @@ static NSString * const reuseIdentifier = @"Cell";
 
 #pragma mark - timer methods
 
-- (void)p_setEdgeTimer{
+- (void)setEdgeTimer{
     if (!_edgeTimer && _edgeScrollEable) {
         _edgeTimer = [CADisplayLink displayLinkWithTarget:self selector:@selector(p_edgeScroll)];
         [_edgeTimer addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
     }
 }
 
-- (void)p_stopEdgeTimer{
+- (void)stopEdgeTimer{
     if (_edgeTimer) {
         [_edgeTimer invalidate];
         _edgeTimer = nil;
