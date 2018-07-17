@@ -35,6 +35,7 @@ static NSString *animationKey = @"PagingShakeAnimation";
         UIButton *deleteButton=[[UIButton alloc]init];
         [deleteButton setBackgroundImage:[UIImage imageNamed:@"delete.png"] forState:UIControlStateNormal];
         [deleteButton addTarget:self action:@selector(clickDeleteButton) forControlEvents:UIControlEventTouchUpInside];
+        deleteButton.hidden=YES;
         [_headerButton addSubview:deleteButton];
 
         _deleteButton=deleteButton;

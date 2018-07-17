@@ -58,18 +58,14 @@
     self.homeCollectionV.pagingEnabled = YES;
     self.homeCollectionV.backgroundColor = [[UIColor grayColor] colorWithAlphaComponent:0.3];
     [self.view addSubview:self.homeCollectionV];
-    //注册单元格
-//    [self.homeCollectionV registerNib:[UINib nibWithNibName:reusableCell
-//                                                     bundle: [NSBundle mainBundle]] forCellWithReuseIdentifier:reusableCell];
+
     UIButton *button = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 40, 40)];
     button.backgroundColor = [UIColor cyanColor];
     [button addTarget:self action:@selector(handle) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:button];
     
     _select = NO;
-    
 
-//    [self.homeCollectionV registerClass:[SubCollectionViewCell class] forCellReuseIdentifier:reusableCell];
     [self.homeCollectionV registerClass:[SubCollectionViewCell class] forCellWithReuseIdentifier:reusableCell];
 }
 - (void)handle{
@@ -106,9 +102,6 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    //    UINib *nib = [UINib nibWithNibName:reusableCell
-    //                                bundle: [NSBundle mainBundle]];
-    //    [collectionView registerNib:nib forCellWithReuseIdentifier:reusableCell];
 
     SubCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reusableCell   forIndexPath:indexPath];
 
